@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Layout</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7880B5;
+}
+
+.card {
+  background-color: #6BBAEC;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Log In</h1>
+    <div class="button-container">
+        <a href="https://attendance.auth.eu-north-1.amazoncognito.com/login?client_id=75s7eiur90nbaifo0ddh6egahb&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Flogged_in.html"><button class="button">Admin</button></a>
+        <a href="https://parking-user.auth.eu-north-1.amazoncognito.com/login?client_id=46dm6vqug36ab9aa06gs81v5im&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fuser.html"><button class="button">User</button></a>
+    </div>
+  </div>
+</body>
+</html>
